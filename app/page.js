@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import react from "react";
 import Link from 'next/link'
@@ -5,15 +6,22 @@ import { DiGithubBadge } from "react-icons/di";
 import { IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { Technical } from "@/components/technical";
+import Project from "@/components/project";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-
+  const router = useRouter();
   return (
      <>
        // Navbar
        <div>
+            <Button onClick={()=>{router.push('/edit')}}>
+              Edit
+            </Button>
            /*
              Shivam Kumar Verma
+             
 
              About
              Skills
@@ -76,9 +84,15 @@ export default function Home() {
             <Technical title = "Databases" skills = {["PostgreSQL","MongoDB","MySQL","GraphQL","vector Sql"]}
             />
 
+            <div>
+              <h1>Features Projects</h1>
+              {/* <Project
+               name = "Payment Exchange Application"
+              /> */}
+            </div>
           </div>
         
-
+            
           </div>
        </div>
      </>
