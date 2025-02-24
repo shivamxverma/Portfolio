@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { DiGithubBadge } from "react-icons/di";
 import { AiOutlineEye } from "react-icons/ai";
 
-const Project = ({ name, description, image, icons, data, github, live }) => {
+const Project = ({ name, description, image, techStack, projectDefine, github, live }) => {
   return (
     <div className="p-6 rounded-xl shadow-lg bg-gray-100">
       <h1 className="text-2xl font-bold">{name}</h1>
@@ -19,14 +19,14 @@ const Project = ({ name, description, image, icons, data, github, live }) => {
 
       {/* Icons Section */}
       <ul className="flex gap-2 mt-4">
-        {icons.map((Icon, index) => (
-          <li key={index} className="text-2xl">{<Icon />}</li>
+        {techStack.map((Tech, index) => (
+          <li key={index} className="text-2xl">{Tech}</li>
         ))}
       </ul>
 
       {/* Data Section */}
       <ul className="mt-4">
-        {data.map((d, i) => (
+        {projectDefine.map((d, i) => (
           <li key={i} className="text-gray-700">{d}</li>
         ))}
       </ul>
