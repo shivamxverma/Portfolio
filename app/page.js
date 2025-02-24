@@ -29,7 +29,7 @@ export default function Home() {
         </section>
 
         {/* Achievements Section (Placeholder) */}
-        <section id="achievements" className="py-12 px-6 md:px-12 lg:px-24 bg-white">
+        {/* <section id="achievements" className="py-12 px-6 md:px-12 lg:px-24 bg-white">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Achievements
@@ -37,12 +37,11 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-8">
               A list of my notable achievements (coming soon).
             </p>
-            {/* Add your achievements content here later */}
           </div>
-        </section>
+        </section> */}
 
         {/* CodeLab Section (Placeholder) */}
-        <section id="codelab" className="py-12 px-6 md:px-12 lg:px-24 bg-gray-100">
+        {/* <section id="codelab" className="py-12 px-6 md:px-12 lg:px-24 bg-gray-100">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               CodeLab
@@ -50,12 +49,11 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-8">
               My coding experiments and snippets (coming soon).
             </p>
-            {/* Add your CodeLab content here later */}
           </div>
-        </section>
+        </section> */}
 
         {/* Blog Section (Placeholder) */}
-        <section id="blog" className="py-12 px-6 md:px-12 lg:px-24 bg-white">
+        {/* <section id="blog" className="py-12 px-6 md:px-12 lg:px-24 bg-white">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Blog
@@ -63,9 +61,8 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-8">
               My latest blog posts (coming soon).
             </p>
-            {/* Add your Blog content here later */}
           </div>
-        </section>
+        </section> */}
 
         {/* Projects Section */}
         <section id="projects">

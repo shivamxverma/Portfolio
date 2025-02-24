@@ -7,7 +7,7 @@ const projects = [
   {
     name: "AI Short Video Generator",
     description: "An AI-powered short video generation platform that automates content creation and streamlines video production workflows.",
-    techStack: ["Next.js", "React", "OpenAI GPT-4", "Stripe", "WebSockets"],
+    techStack: ["Next.js", "React", "OpenAI GPT-4",],
     projectDefine: [
       "➢ Automated text-to-video pipeline with dynamic GPT-4 scripts",
       "➢ AI-driven voiceovers and auto-generated subtitles",
@@ -15,12 +15,12 @@ const projects = [
       "➢ Secure payment processing with real-time transaction tracking",
       "➢ Fully automated system for efficient video creation",
     ],
-    image: "", // Add path to screenshot if available (e.g., "/ai-video-gen-screenshot.jpg")
+    image: "/shivam.jpg", // Add path to screenshot if available (e.g., "/ai-video-gen-screenshot.jpg")
     github: "https://github.com/shivamxverma/snap-cut",
     live: "https://github.com/shivamxverma/snap-cut",
   },
   {
-    name: "ScalableTodo",
+    name: "Todoist",
     description: "A scalable task management application designed for efficient productivity tracking and user engagement.",
     techStack: ["Next.js", "React", "PostgreSQL", "Prisma"],
     projectDefine: [
@@ -30,20 +30,20 @@ const projects = [
       "➢ Responsive and interactive UI design",
       "➢ Scalable database operations with Prisma ORM",
     ],
-    image: "", // Add path to screenshot if available (e.g., "/scalable-todo-screenshot.jpg")
+    image: "/shivam.jpg", // Add path to screenshot if available (e.g., "/scalable-todo-screenshot.jpg")
     github: "https://github.com/shivamxverma/ScalableTodo",
     live: "https://github.com/shivamxverma/ScalableTodo"
   },
   {
     name: "Devbytes Medium Application",
-    description: "A secure and scalable payment exchange platform built with modern technologies.",
+    description: "A secure and scalabl blog application built with modern technologies.",
     techStack: ["Next.js", "React.js", "MonoRepo", "Prisma", "Postgres"],
     projectDefine: [
-      "➢ Seamless payment integration",
+      "➢ User Can Create Blog Application",
       "➢ User authentication",
-      "➢ Real-time transaction tracking",
+      "➢ User Can Generate Blog with AI",
     ],
-    image: "", // Existing placeholder
+    image: "/shivam.jpg", // Existing placeholder
     github: "https://github.com/shivamxverma/DevBytes-medium",
     live: "https://github.com/shivamxverma/DevBytes-medium",
   },
@@ -83,9 +83,9 @@ const Project = ({ name, description, image, projectDefine, techStack, github, l
         <Link href={github} className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
           <FaGithub className="mr-1" /> GitHub
         </Link>
-        <Link href={live} className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+        {/* <Link href={live} className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
           <BsGlobe className="mr-1" /> Live
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
