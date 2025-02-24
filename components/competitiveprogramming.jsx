@@ -47,12 +47,12 @@ const CompetitiveProgramming = () => {
           </thead>
           <tbody>
             <tr className="text-gray-700">
-              <td>1400</td>
-              <td>Pupil</td>
+              <td>1000</td>
+              <td>Newbie</td>
             </tr>
           </tbody>
         </table>
-        <p className="mt-2 text-sm text-gray-600">Max Rating: 1450 (Dec 2023)</p>
+        <p className="mt-2 text-sm text-gray-600">Max Rating: 1074 (Dec 2023)</p>
         <p className="text-sm text-gray-600">Contests: 20</p>
       </div>
 
