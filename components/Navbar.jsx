@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: 'CodeLab', path: '#codelab' },
     { name: 'Blog', path: '#blog' },
     { name: 'Contact', path: '#contact' },
-    { name: 'Resume', path: '/Shivam_Resume_SDE.pdf' }, 
+    { name: 'Resume', path: '/Shivam_Resume_SDE.pdf' , isExternal: true }, 
   ];
 
   return (
