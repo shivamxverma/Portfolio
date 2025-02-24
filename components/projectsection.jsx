@@ -16,8 +16,8 @@ const projects = [
       "➢ Fully automated system for efficient video creation",
     ],
     image: "", // Add path to screenshot if available (e.g., "/ai-video-gen-screenshot.jpg")
-    github: "", // Add GitHub link if available (e.g., "https://github.com/shivamxverma/ai-video-generator")
-    live: "", // Add live demo link if available (e.g., "https://aivideogen.live")
+    github: "https://github.com/shivamxverma/snap-cut",
+    live: "https://github.com/shivamxverma/snap-cut",
   },
   {
     name: "ScalableTodo",
@@ -31,8 +31,8 @@ const projects = [
       "➢ Scalable database operations with Prisma ORM",
     ],
     image: "", // Add path to screenshot if available (e.g., "/scalable-todo-screenshot.jpg")
-    github: "", // Add GitHub link if available (e.g., "https://github.com/shivamxverma/scalable-todo")
-    live: "", // Add live demo link if available (e.g., "https://scalabletodo.live")
+    github: "https://github.com/shivamxverma/ScalableTodo",
+    live: "https://github.com/shivamxverma/ScalableTodo"
   },
   {
     name: "Devbytes Medium Application",
@@ -44,8 +44,8 @@ const projects = [
       "➢ Real-time transaction tracking",
     ],
     image: "", // Existing placeholder
-    github: "https://github.com/shivamxverma/devbytes",
-    live: "https://devbytes.live",
+    github: "https://github.com/shivamxverma/DevBytes-medium",
+    live: "https://github.com/shivamxverma/DevBytes-medium",
   },
 ];
 

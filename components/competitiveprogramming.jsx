@@ -5,11 +5,11 @@ import { FaCode, FaExternalLinkAlt } from 'react-icons/fa'; // Icons for styling
 const CompetitiveProgramming = () => {
   // Profile data (replace with your actual profile URLs)
   const profiles = [
-    { platform: 'CodeChef', url: 'https://www.codechef.com/users/yourusername' },
-    { platform: 'Codeforces', url: 'https://codeforces.com/profile/yourusername' },
-    { platform: 'LeetCode', url: 'https://leetcode.com/yourusername/' },
-    { platform: 'AtCoder', url: 'https://atcoder.jp/users/yourusername' },
-    { platform: 'CSES', url: 'https://cses.fi/user/yourusername' },
+    { platform: 'CodeChef', url: 'https://www.codechef.com/users/mahavir99' },
+    { platform: 'Codeforces', url: 'https://codeforces.com/profile/MahavirCoder' },
+    { platform: 'LeetCode', url: 'https://leetcode.com/u/MahavirCoder/' },
+    { platform: 'AtCoder', url: 'https://atcoder.jp/users/MahavirCoder' },
+    { platform: 'CSES', url: 'https://cses.fi/user/169696' },
   ];
 
   return (
