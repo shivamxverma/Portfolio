@@ -13,9 +13,9 @@ const Navbar = () => {
     { name: 'About', path: '#about' },
     { name: 'Skills', path: '#skills' },
     { name: 'Projects', path: '#projects' }, // Added
-    { name: 'Achievements', path: '#achievements' },
-    { name: 'CodeLab', path: '#codelab' },
-    { name: 'Blog', path: '#blog' },
+    // { name: 'Achievements', path: '#achievements' },
+    // { name: 'CodeLab', path: '#codelab' },
+    // { name: 'Blog', path: '#blog' },
     { name: 'Competitive Programming', path: '#competitive-programming' }, // Added
     { name: 'Contact', path: '#contact' },
     { name: 'Resume', path: '/Shivam_Resume_SDE.pdf', isDownload: true },

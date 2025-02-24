@@ -12,7 +12,7 @@ const Introduction = () => {
   // Moved skillCode to a const with more details
   const skillCode = `const developer = {
   name: 'Shivam Kumar Verma',
-  role: 'Software Developer',
+  role: 'FullStack Developer',
   skills: ['Node.js', 'Python', 'PostgreSQL', 'React', 'TypeScript'],
   currentProject: 'Building scalable web applications',
   funFact: 'Loves solving algorithmic puzzles!'
