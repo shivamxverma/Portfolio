@@ -36,7 +36,7 @@ const CompetitiveProgramming = () => {
       </div>
 
       {/* Codeforces Section */}
-      <div className="platform flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
+      {/* <div className="platform flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
         <h2 className="text-xl font-semibold text-gray-800 mb-3">Codeforces</h2>
         <table className="w-full text-center">
           <thead>
@@ -54,7 +54,7 @@ const CompetitiveProgramming = () => {
         </table>
         <p className="mt-2 text-sm text-gray-600">Max Rating: 1074 (Dec 2023)</p>
         <p className="text-sm text-gray-600">Contests: 20</p>
-      </div>
+      </div> */}
 
       {/* Problem Solving Statistics Section */}
       <div className="stats flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
@@ -80,7 +80,7 @@ const CompetitiveProgramming = () => {
       </div>
 
       {/* Profiles Section */}
-      <div className="profiles flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
+      {/* <div className="profiles flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
         <h2 className="text-xl font-semibold text-gray-800 mb-3">Profiles</h2>
         <ul className="space-y-2">
           {profiles.map((profile, index) => (
@@ -98,7 +98,7 @@ const CompetitiveProgramming = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
