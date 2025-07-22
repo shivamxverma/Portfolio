@@ -39,9 +39,9 @@ This portfolio is built with **Next.js** and styled with **Tailwind CSS**, featu
 
 ## Competitive Programming
 - **CodeChef**: 1609 Rating (3 Stars), Max Rating: 1650
-- **Codeforces**: 1000 Rating (Newbie), Max Rating: 1074
+- **Codeforces**: 1230 Rating (Newbie), Max Rating: 1261
 - **Problem Solving Stats**:
-  - Total Problems: 700+
+  - Total Problems: 1000+
   - Data Structures: 200+
   - Algorithms: 150+
   - Dynamic Programming: 50+
