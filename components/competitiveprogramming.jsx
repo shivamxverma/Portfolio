@@ -31,12 +31,12 @@ const CompetitiveProgramming = () => {
             </tr>
           </tbody>
         </table>
-        <p className="mt-2 text-sm text-gray-600">Max Rating: 1650 (Jan 2024)</p>
+        <p className="mt-2 text-sm text-gray-600">Max Rating: 1609 (Jan 2024)</p>
         <p className="text-sm text-gray-600">Contests: 25</p>
       </div>
 
       {/* Codeforces Section */}
-      {/* <div className="platform flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
+      <div className="platform flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">
         <h2 className="text-xl font-semibold text-gray-800 mb-3">Codeforces</h2>
         <table className="w-full text-center">
           <thead>
@@ -47,14 +47,14 @@ const CompetitiveProgramming = () => {
           </thead>
           <tbody>
             <tr className="text-gray-700">
-              <td>1000</td>
-              <td>Newbie</td>
+              <td>1261</td>
+              <td>pupil</td>
             </tr>
           </tbody>
         </table>
-        <p className="mt-2 text-sm text-gray-600">Max Rating: 1074 (Dec 2023)</p>
-        <p className="text-sm text-gray-600">Contests: 20</p>
-      </div> */}
+        <p className="mt-2 text-sm text-gray-600">Max Rating: 1261 (Apr 2025)</p>
+        <p className="text-sm text-gray-600">Contests: 40</p>
+      </div>
 
       {/* Problem Solving Statistics Section */}
       <div className="stats flex-1 min-w-[250px] border border-gray-200 p-4 rounded-md bg-white shadow-sm hover:shadow-md transition-shadow">

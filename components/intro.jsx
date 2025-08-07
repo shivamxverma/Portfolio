@@ -9,18 +9,16 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const Introduction = () => {
-  // Moved skillCode to a const with more details
   const skillCode = `const developer = {
   name: 'Shivam Kumar Verma',
   role: 'FullStack Developer',
-  skills: ['Node.js', 'Python', 'PostgreSQL', 'React', 'TypeScript'],
+  skills: ['Node.js', , 'PostgreSQL', 'React', 'Javascript'],
   currentProject: 'Building scalable web applications',
   funFact: 'Loves solving algorithmic puzzles!'
 };`;
 
-  // Define skills array for reusability
   const skillsList = [
-    'JavaScript', 'React', 'Node.js', 'Python', 'Docker', 'AWS', 'TypeScript', 'PostgreSQL'
+    'JavaScript', 'React', 'Node.js', , 'Docker', 'AWS', , 'PostgreSQL'
   ];
 
   return (
@@ -35,7 +33,7 @@ const Introduction = () => {
               width={200}
               height={200}
               className="rounded-full shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300 object-cover"
-              priority // Loads image faster
+              priority 
             />
           </div>
           <div className="text-center md:text-left">
@@ -47,7 +45,7 @@ const Introduction = () => {
             </p>
             <div className="flex justify-center md:justify-start gap-4 mb-8">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-transform hover:scale-105">
-                <Link href="mailto:shivamvofficial99@gmail.com">Get in Touch</Link>
+                <Link href="mailto:shivam0xverma@gmail.com">Get in Touch</Link>
               </Button>
               <Button className="bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-md transition-transform hover:scale-105">
                 <Link href="https://github.com/shivamxverma" target="_blank" rel="noopener noreferrer">

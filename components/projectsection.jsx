@@ -5,49 +5,82 @@ import { BsGlobe } from 'react-icons/bs';
 
 const projects = [
   {
-    name: "AI Short Video Generator",
-    description: "An AI-powered short video generation platform that automates content creation and streamlines video production workflows.",
-    techStack: ["Next.js", "React", "OpenAI GPT-4",],
+    name: "CodeSM",
+    description:
+      "A role-based coding platform that stores problems in AWS and runs submissions inside isolated Docker containers.",
+    techStack: ["Node.js", "React.js", "MongoDB", "AWS", "Docker"],
     projectDefine: [
-      "➢ Automated text-to-video pipeline with dynamic GPT-4 scripts",
-      "➢ AI-driven voiceovers and auto-generated subtitles",
-      "➢ Optimized rendering reducing processing time by 40%",
-      "➢ Secure payment processing with real-time transaction tracking",
-      "➢ Fully automated system for efficient video creation",
+      "➢ Developed a role-based system to author and store 12 coding problems in AWS buckets, organizing input test cases as text files in structured folders.",
+      "➢ Enabled 6 users to solve problems, with isolated Docker containers handling code execution.",
+      "➢ Designed user profiles using the Shadcn UI library, displaying details and avatars for 4 active users, maintaining daily coding-streak.",
+      "➢ Implemented rate limiting to curb abuse, reducing failed requests and ensuring high availability.",
     ],
-    image: "/shivam.jpg", // Add path to screenshot if available (e.g., "/ai-video-gen-screenshot.jpg")
-    github: "https://github.com/shivamxverma/snap-cut",
-    live: "https://github.com/shivamxverma/snap-cut",
+    image: "/codesm.png",          
+    github: "https://github.com/shivamxverma/codesm",
+    live: "https://code-sm.vercel.app/",
   },
   {
-    name: "Todoist",
-    description: "A scalable task management application designed for efficient productivity tracking and user engagement.",
-    techStack: ["Next.js", "React", "PostgreSQL", "Prisma"],
+    name: "DeepDoc",
+    description:
+      "An AI-powered document-chat app that lets users query the contents of uploaded PDFs through Gemini-driven conversations.",
+    techStack: ["Next.js", "Vercel Blob", "LangChain", "Gemini API", "Pinecone"],
     projectDefine: [
-      "➢ User authentication with role-based access control",
-      "➢ Full CRUD operations with normalized database",
-      "➢ Efficiency tracking system for daily productivity",
-      "➢ Responsive and interactive UI design",
-      "➢ Scalable database operations with Prisma ORM",
+      "➢ Built a web app allowing users to upload and query content from 10 PDFs via a chatbot powered by Gemini API.",
+      "➢ Leveraged LangChain to extract text and generate embeddings, storing vectors in Pinecone.",
+      "➢ Developed a responsive Next.js frontend with Multer for secure uploads, supporting more than 4 concurrent users with minimal downtime.",
     ],
-    image: "/shivam.jpg", // Add path to screenshot if available (e.g., "/scalable-todo-screenshot.jpg")
-    github: "https://github.com/shivamxverma/ScalableTodo",
-    live: "https://github.com/shivamxverma/ScalableTodo"
+    image: "/deepdoc.png",
+    github: "https://github.com/shivamxverma/DeepDoc",     
+    live: "https://deep-doc-six.vercel.app/",
   },
   {
-    name: "Devbytes Medium Application",
-    description: "A secure and scalabl blog application built with modern technologies.",
-    techStack: ["Next.js", "React.js", "MonoRepo", "Prisma", "Postgres"],
+    name: "Chatterly",
+    description:
+      "A real-time group chat system featuring WebSockets, Redis caching, and persistent message storage.",
+    techStack: ["Node.js", "React", "PostgreSQL", "Redis"],
     projectDefine: [
-      "➢ User Can Create Blog Application",
-      "➢ User authentication",
-      "➢ User Can Generate Blog with AI",
+      "➢ Engineered a chat system supporting real-time group chats for up to 4 users via WebSockets.",
+      "➢ Optimized Redis caching to reduce message-retrieval latency.",
+      "➢ Integrated PostgreSQL to persistently store 150 messages and user data for 4 accounts, ensuring data integrity.",
+      "➢ Crafted a responsive React frontend, improving UI responsiveness by 20% during active sessions.",
     ],
-    image: "/shivam.jpg", // Existing placeholder
-    github: "https://github.com/shivamxverma/DevBytes-medium",
-    live: "https://github.com/shivamxverma/DevBytes-medium",
+    image: "/chatterly.png",
+    github: "https://github.com/shivamxverma/Chatterly",     
+    live: "https://chatterly-olive.vercel.app/",
+  },
+  {
+    name: "BookTicket",
+    description:
+      "A multi-role event-booking platform with secure payments, real-time dashboards, and analytics for hosts.",
+    techStack: ["Flask", "React", "PostgreSQL (SQLAlchemy)"],
+    projectDefine: [
+      "➢ Built a platform where users can browse events, view sessions, and purchase tickets securely.",
+      "➢ Designed RESTful Flask APIs with SQLAlchemy ORM to manage events, sessions, bookings, and role-based permissions, reducing boilerplate by 25%.",
+      "➢ Implemented facilitator dashboard with real-time notifications and booking analytics, enabling hosts to monitor attendee counts and update session details.",
+      "➢ Developed a responsive React UI that lets users track past and upcoming bookings while facilitators manage their events from any device.",
+    ],
+    image: "/bookticket.png",
+    github: "https://github.com/shivamxverma/BookTicket",    
+    live: "#",                                               
+  },
+  {
+    name: "NoteStack",
+    description:
+      "A full-stack note-taking and bookmark manager with robust REST APIs, JWT authentication, and powerful search capabilities.",
+    techStack: ["Node.js", "Express.js", "MongoDB", "Render"],
+    projectDefine: [
+      "➢ Implemented JWT-secured user registration, login, and logout endpoints.",
+      "➢ Built CRUD APIs for notes and bookmarks with text-search and tag-filtering capabilities.",
+      "➢ Added favoriting and pagination, improving retrieval speed by 35%.",
+      "➢ Deployed on Render with CI/CD pipelines and environment-based configuration.",
+      "➢ Wrote end-to-end tests with Supertest, achieving >90% API coverage.",
+    ],
+    image: "/notestack.png",
+    github: "https://github.com/shivamxverma/NoteStack",
+    live: "https://notestack-o6b5.onrender.com/",
   },
 ];
+
 
 const Project = ({ name, description, image, projectDefine, techStack, github, live }) => {
   return (

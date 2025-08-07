@@ -2,17 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   FaPython,
-  FaJava, // Placeholder for C/C++
+  FaJava, 
   FaJsSquare,
   FaReact,
   FaNodeJs,
   FaDocker,
   FaDatabase,
-  FaGripLines, // Placeholder for GraphQL
-  FaCode, // Added for category icons
+  FaGripLines, 
+  FaCode,
 } from 'react-icons/fa';
 
-// Individual Skill Card Component
 const SkillCard = ({ title, skills, gradient, icons }) => {
   return (
     <motion.div
@@ -41,24 +40,23 @@ const SkillCard = ({ title, skills, gradient, icons }) => {
   );
 };
 
-// Main TechnicalSkills Component
 const TechnicalSkills = () => {
   const skillData = [
     {
       title: 'Languages',
-      skills: ['Python', 'C/C++', 'JavaScript/TypeScript'],
+      skills: ['Python', 'C/C++', 'JavaScript'],
       gradient: 'bg-gradient-to-br from-blue-50 to-blue-200 border-blue-100',
-      icons: [<FaPython />, <FaJava />, <FaJsSquare />], // FaJava as placeholder for C/C++
+      icons: [<FaPython />, <FaJava />, <FaJsSquare />],
     },
     {
       title: 'Web Development',
-      skills: ['React.js/Next.js', 'Node.js/Express.js', 'Docker/Kubernetes'],
+      skills: ['React.js/Next.js', 'Node.js/Express.js', 'Docker'],
       gradient: 'bg-gradient-to-br from-green-50 to-green-200 border-green-100',
       icons: [<FaReact />, <FaNodeJs />, <FaDocker />],
     },
     {
       title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'GraphQL', 'Vector SQL'],
+      skills: ['PostgreSQL', 'MongoDB', 'MySQL' , 'Redis'],
       gradient: 'bg-gradient-to-br from-purple-50 to-purple-200 border-purple-100',
       icons: [<FaDatabase />, <FaDatabase />, <FaDatabase />, <FaGripLines />, <FaDatabase />], // Placeholder for GraphQL
     },
