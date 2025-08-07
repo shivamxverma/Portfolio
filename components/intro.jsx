@@ -5,8 +5,8 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const Introduction = () => {
   const skillCode = `const developer = {
@@ -99,11 +99,11 @@ const Introduction = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
               Skills Snapshot
             </h2>
-            <div className="bg-gray-900 p-4 rounded-lg mb-6">
+            {/* <div className="bg-gray-900 p-4 rounded-lg mb-6">
               <SyntaxHighlighter language="javascript" style={atomDark} customStyle={{ fontSize: '0.9rem' }}>
                 {skillCode}
               </SyntaxHighlighter>
-            </div>
+            </div> */}
             <div className="flex flex-wrap gap-3">
               {skillsList.map((skill) => (
                 <span
