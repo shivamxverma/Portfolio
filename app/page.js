@@ -11,7 +11,7 @@ import TechnicalStack from '@/components/TechnicalStack';
 import EngineeringBlog from '@/components/EngineeringBlog';
 import Certificates from '@/components/Certificates';
 import GitHubActivity from '@/components/GitHubActivity';
-import Contact from '@/components/Contact';
+import Contact from '@/components/contact';
 import Footer from '@/components/Footer';
 
 export default function Home() {
