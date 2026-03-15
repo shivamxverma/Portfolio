@@ -9,7 +9,8 @@ const experiences = [
   {
     company: 'VerlyAI',
     url: 'https://verlyai.xyz',
-    role: 'Software Developer Intern',
+    role: 'Contributing',
+    subtitle: 'Contributing to the VerlyAI project',
     period: 'Jan 2026 – Present',
     bullets: [
       'Solely architected the end-to-end AI chatbot flow, building a robust data ingestion pipeline with a custom web crawler to scrape, process, and index website content from raw URLs.',
@@ -91,6 +92,9 @@ export default function Experience() {
                       </>
                     )}
                   </div>
+                  {exp.subtitle && (
+                    <p className="text-text-secondary text-sm mt-1">{exp.subtitle}</p>
+                  )}
                   <p className="text-text-secondary text-sm font-mono mt-1">{exp.period}</p>
                 </div>
               </div>
