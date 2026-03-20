@@ -25,7 +25,7 @@ const experiences = [
     url: 'https://klimb.io',
     role: 'Full Stack Developer Intern',
     location: 'Remote',
-    period: 'Oct 2025 – Jan 2026',
+    period: 'Nov 2025 – Mar 2026',
     bullets: [
       'Migrated 1,000+ legacy subscriptions to a modular credit-based architecture, ensuring 100% data integrity through pre-migration impact analysis with zero downtime.',
       'Engineered a metered billing system with real-time quota enforcement, resolving financial leaks and improving cost-tracking accuracy by 80% for AI and email services.',

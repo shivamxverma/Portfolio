@@ -5,35 +5,35 @@ import { motion } from 'framer-motion';
 
 const timeline = [
   {
-    year: '2024',
+    year: '2025',
     title: 'CodeSM – Role-based Coding Platform',
     description: 'Built a coding platform with problem storage on AWS and isolated Docker execution.',
     tech: ['Node.js', 'React', 'MongoDB', 'AWS', 'Docker'],
     lessons: 'Rate limiting and container isolation are critical for secure code execution.',
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'DeepDoc – RAG Document Chat',
     description: 'AI-powered document Q&A using embeddings and vector search with Gemini.',
     tech: ['Next.js', 'LangChain', 'Gemini', 'Pinecone'],
     lessons: 'Chunking strategy and embedding model choice directly impact retrieval quality.',
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'Chatterly – Real-time Chat',
     description: 'Group chat with WebSockets, Redis caching, and PostgreSQL persistence.',
     tech: ['Node.js', 'React', 'PostgreSQL', 'Redis', 'WebSockets'],
     lessons: 'Redis for session/cache and PostgreSQL for source of truth keeps latency low.',
   },
   {
-    year: '2024',
+    year: '2026',
     title: 'Trading-n8n – Workflow Automation',
     description: 'n8n-based workflows for trading logic and integrations with TypeScript/JavaScript.',
     tech: ['TypeScript', 'n8n', 'JavaScript'],
     lessons: 'Workflow automation enables repeatable pipelines and clear step separation.',
   },
   {
-    year: '2024',
+    year: '2026',
     title: 'Email-rag – Email Thread RAG',
     description: 'Chat over email threads with FastAPI, BM25 retrieval, and Gemini with message-level citations.',
     tech: ['Python', 'FastAPI', 'React', 'Gemini', 'Docker'],
