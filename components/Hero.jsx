@@ -73,7 +73,7 @@ export default function Hero() {
                 <Link href="#projects">View Projects</Link>
               </Button>
               <Button asChild variant="outline" className="border-border text-text-primary hover:bg-surface rounded-lg">
-                <a href="https://drive.google.com/file/d/1ZZN2q9ilPl7G_GRKk2v4XswLpxuw7fRV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/13uuEf3qY8ghp8fT-BXYfouiwqwT7Ou44/view?usp=sharing">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Resume
                 </a>
