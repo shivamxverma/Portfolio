@@ -54,6 +54,10 @@ export default function AdminResumePage() {
           <Link href="/" className="text-accent hover:underline">
             ← Back to site
           </Link>
+          {' · '}
+          <Link href="/admin/blogs" className="text-accent hover:underline">
+            Blog posts
+          </Link>
         </p>
         <h1 className="text-2xl font-semibold mb-2">Update resume link</h1>
         <p className="text-sm text-text-secondary mb-8">

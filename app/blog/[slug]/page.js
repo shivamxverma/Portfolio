@@ -1,11 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getBlogBySlug } from '@/content/blogs';
 import { Clock, ArrowLeft, Calendar } from 'lucide-react';
+import { getBlogBySlug } from '@/lib/blog-store';
+import BlogMarkdown from '@/components/BlogMarkdown';
+
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }) {
-  const post = getBlogBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getBlogBySlug(slug);
   if (!post) return { title: 'Post not found' };
   return {
     title: `${post.title} | Shivam Verma`,
@@ -14,7 +18,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-  const post = getBlogBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getBlogBySlug(slug);
   if (!post) notFound();
 
   return (
@@ -27,14 +32,19 @@ export default async function BlogPostPage({ params }) {
           <ArrowLeft size={16} />
           All posts
         </Link>
-        <header className="mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+        <header className="mb-10 border-b border-border pb-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-text-primary mb-4 tracking-tight">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-text-secondary text-sm font-mono">
+          <p className="text-lg text-text-secondary mb-6">{post.summary}</p>
+          <div className="flex flex-wrap items-center gap-4 text-text-secondary text-sm font-mono">
             <span className="flex items-center gap-1">
               <Calendar size={14} />
-              {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              {new Date(post.date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
             </span>
             <span className="flex items-center gap-1">
               <Clock size={14} />
@@ -42,14 +52,7 @@ export default async function BlogPostPage({ params }) {
             </span>
           </div>
         </header>
-        <div className="prose prose-invert max-w-none text-text-primary">
-          <p className="text-text-secondary text-lg mb-6">{post.summary}</p>
-          <div className="border border-border rounded-lg p-6 bg-card text-text-secondary text-sm">
-            <p className="mb-0">
-              <strong className="text-text-primary">Content placeholder.</strong> Add your full post content here: use MDX, markdown, or a CMS. You can edit this page in <code className="font-mono text-accent">app/blog/[slug]/page.js</code> or pull content from <code className="font-mono text-accent">content/blogs.js</code> / MDX files.
-            </p>
-          </div>
-        </div>
+        <BlogMarkdown>{post.content || ''}</BlogMarkdown>
       </article>
     </div>
   );

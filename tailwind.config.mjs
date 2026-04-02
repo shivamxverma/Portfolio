@@ -8,6 +8,37 @@ export default {
   ],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            color: theme('colors.text-secondary'),
+            '--tw-prose-body': theme('colors.text-secondary'),
+            '--tw-prose-headings': theme('colors.text-primary'),
+            '--tw-prose-lead': theme('colors.text-secondary'),
+            '--tw-prose-links': theme('colors.accent'),
+            '--tw-prose-bold': theme('colors.text-primary'),
+            '--tw-prose-counters': theme('colors.text-secondary'),
+            '--tw-prose-bullets': theme('colors.text-secondary'),
+            '--tw-prose-hr': theme('colors.border'),
+            '--tw-prose-quotes': theme('colors.text-primary'),
+            '--tw-prose-quote-borders': theme('colors.border'),
+            '--tw-prose-captions': theme('colors.text-secondary'),
+            '--tw-prose-code': theme('colors.accent'),
+            '--tw-prose-pre-code': theme('colors.text-primary'),
+            '--tw-prose-pre-bg': theme('colors.card'),
+            '--tw-prose-th-borders': theme('colors.border'),
+            '--tw-prose-td-borders': theme('colors.border'),
+            a: {
+              textDecoration: 'underline',
+              textUnderlineOffset: '2px',
+            },
+            'h2, h3': {
+              scrollMarginTop: '5rem',
+            },
+          },
+        },
+      }),
       colors: {
         background: "#0D1117",
         card: "#161B22",
@@ -35,5 +66,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };

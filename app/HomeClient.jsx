@@ -14,7 +14,7 @@ import GitHubActivity from '@/components/GitHubActivity';
 import Contact from '@/components/contact';
 import Footer from '@/components/Footer';
 
-export default function HomeClient({ resumeUrl }) {
+export default function HomeClient({ resumeUrl, blogPosts = [] }) {
   return (
     <div className="min-h-screen bg-background text-text-primary">
       <Navbar />
@@ -26,7 +26,7 @@ export default function HomeClient({ resumeUrl }) {
         <FeaturedProjects />
         <CompetitiveProgramming />
         <TechnicalStack />
-        <EngineeringBlog />
+        <EngineeringBlog posts={blogPosts} />
         <Certificates />
         <GitHubActivity />
         <Contact />

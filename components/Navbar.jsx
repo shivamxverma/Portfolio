@@ -19,6 +19,12 @@ export default function Navbar() {
           >
             Shivam Verma
           </Link>
+          <Link
+            href="/blog"
+            className="text-sm text-text-secondary hover:text-accent transition-colors"
+          >
+            Blog
+          </Link>
         </div>
       </div>
     </motion.nav>

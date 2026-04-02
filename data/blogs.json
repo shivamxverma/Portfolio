@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "slug": "debugging-slow-api",
+      "title": "How I Debugged a Slow API",
+      "summary": "Tracing latency from client to database, identifying N+1 queries and missing indexes.",
+      "readTime": "6 min",
+      "date": "2025-01-15",
+      "published": true,
+      "content": "## The symptom\n\nUsers saw p95 latency spike from **~120ms** to **>2s** on a read-heavy endpoint. Error rates stayed flat, so this was a performance regression, not outright failure.\n\n## What I checked first\n\n1. **App logs** — request duration and downstream call timings.\n2. **Database** — slow query log and `EXPLAIN` on the hot path.\n3. **Infrastructure** — CPU, connections, and pool saturation.\n\n## What we found\n\nThe handler loaded a list of resources, then **one query per item** to fetch related metadata — classic **N+1**. A missing composite index meant each of those queries did more work than necessary.\n\n## Fix\n\n- Batch the related fetch into **one or two queries** (join or `WHERE id IN (...)`).\n- Add an index that matches the filter + sort the query uses.\n\n## Takeaway\n\nMeasure end-to-end, then prove the bottleneck with query plans. Fixing the wrong layer feels productive but wastes time."
+    },
+    {
+      "slug": "designing-scalable-apis",
+      "title": "Designing Scalable APIs",
+      "summary": "REST conventions, versioning, pagination, and rate limiting for long-term scalability.",
+      "readTime": "8 min",
+      "date": "2025-01-10",
+      "published": true,
+      "content": "## Stable contracts\n\nPublic APIs outlive internal services. **Version in the URL** (`/v1/...`) or via headers, but pick one strategy and document it.\n\n## Pagination\n\nOffset pagination is simple but degrades on large tables. **Cursor-based** pagination scales better for feeds and infinite scroll.\n\n## Rate limiting\n\nProtect upstreams and users:\n\n- Return **429** with `Retry-After` when appropriate.\n- Use clear error bodies so clients can backoff intelligently.\n\n## Observability\n\nLog request id, route, latency buckets, and error class. That data drives SLOs and capacity planning."
+    },
+    {
+      "slug": "understanding-vector-databases",
+      "title": "Understanding Vector Databases",
+      "summary": "Embeddings, similarity search, and when to choose a vector store over traditional DBs.",
+      "readTime": "10 min",
+      "date": "2025-01-05",
+      "published": true,
+      "content": "## Embeddings\n\nText (or images) map to **dense vectors** so that *semantic similarity* is approximated by distance in vector space — often cosine similarity or dot product.\n\n## When vectors help\n\n- **Semantic search** — “things like this” beyond keyword match.\n- **RAG** — retrieve chunks, then generate with an LLM.\n\n## When a traditional DB might be enough\n\nIf your queries are structured filters and joins, **PostgreSQL** (with or without `pgvector`) may cover both relational and vector workloads in one place.\n\n## Operations matter\n\nThink about **ingestion**, **re-embedding** when models change, and **metadata filters** combined with vector search."
+    },
+    {
+      "slug": "how-rag-works",
+      "title": "How a RAG System Works",
+      "summary": "Chunking, retrieval, and generation in retrieval-augmented pipelines.",
+      "readTime": "7 min",
+      "date": "2024-12-20",
+      "published": true,
+      "content": "## Pipeline overview\n\n1. **Chunk** documents into retrievable units.\n2. **Embed** chunks and store in a vector index.\n3. At query time, **retrieve** top-k chunks.\n4. **Generate** an answer conditioned on those chunks.\n\n## Chunking trade-offs\n\nSmall chunks improve precision; large chunks preserve context. Overlap between chunks reduces boundary effects.\n\n## Failure modes\n\n- **Retrieval misses** the right passage → model hallucinates or says “I don’t know.”\n- **Stale data** if the index isn’t updated when sources change.\n\nGround answers in retrieved text and cite sources when possible."
+    }
+  ]
+}
