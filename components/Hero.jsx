@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-export default function Hero() {
+export default function Hero({ resumeUrl }) {
   return (
     <section id="hero" className="min-h-screen flex items-center pt-20 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto w-full">
@@ -73,7 +73,7 @@ export default function Hero() {
                 <Link href="#projects">View Projects</Link>
               </Button>
               <Button asChild variant="outline" className="border-border text-text-primary hover:bg-surface rounded-lg">
-                <a href="https://drive.google.com/drive/folders/12LEzkK2j_0fj42Up8phtYt2qxnKp7ceN">
+                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Resume
                 </a>

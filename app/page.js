@@ -1,37 +1,10 @@
-'use client';
-
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Experience from '@/components/Experience';
-import EngineeringTimeline from '@/components/EngineeringTimeline';
-import FeaturedProjects from '@/components/FeaturedProjects';
-import CompetitiveProgramming from '@/components/competitiveprogramming';
-import TechnicalStack from '@/components/TechnicalStack';
-import EngineeringBlog from '@/components/EngineeringBlog';
-import Certificates from '@/components/Certificates';
-import GitHubActivity from '@/components/GitHubActivity';
-import Contact from '@/components/contact';
-import Footer from '@/components/Footer';
+import HomeClient from '@/app/HomeClient';
+import { getResumeUrl } from '@/lib/resume-store';
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-background text-text-primary">
-      <Navbar />
+export const dynamic = 'force-dynamic';
 
-      <main>
-        <Hero />
-        <Experience />
-        <EngineeringTimeline />
-        <FeaturedProjects />
-        <CompetitiveProgramming />
-        <TechnicalStack />
-        <EngineeringBlog />
-        <Certificates />
-        <GitHubActivity />
-        <Contact />
-        <Footer />
-      </main>
-    </div>
-  );
+export default async function Home() {
+  const resumeUrl = await getResumeUrl();
+  return <HomeClient resumeUrl={resumeUrl} />;
 }
